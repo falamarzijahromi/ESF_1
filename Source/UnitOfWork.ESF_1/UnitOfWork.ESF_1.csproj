@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Mehdi Falamarzi</Authors>
+    <Description>Unit of work for ESF_1</Description>
+    <PackageProjectUrl>https://github.com/falamarzijahromi/ESF_1</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/falamarzijahromi/ESF_1</RepositoryUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>ESF_1</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/falamarzijahromi/ESF_1/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
 </Project>
