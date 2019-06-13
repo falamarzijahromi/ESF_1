@@ -17,24 +17,20 @@ namespace Interceptors.ESF_1
             if (!unitOfWork.IsStarted)
             {
                 unitOfWork.Begin();
-
-                try
-                {
-                    interceptionContext.Proceed();
-                }
-                catch
-                {
-                    unitOfWork.Rollback();
-
-                    throw;
-                }
-
-                unitOfWork.Commit();
             }
-            else
+
+            try
             {
                 interceptionContext.Proceed();
             }
+            catch
+            {
+                unitOfWork.Rollback();
+
+                throw;
+            }
+
+            unitOfWork.Commit();
         }
     }
 }
