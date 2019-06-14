@@ -10,7 +10,9 @@
     <PackageProjectUrl>https://github.com/falamarzijahromi</PackageProjectUrl>
     <RepositoryUrl>https://github.com/falamarzijahromi</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.2.0</Version>
+    <PackageReleaseNotes>Old TransactionInterceptor changed to UnitOfWorkInterceptor.
+New TransactionInterceptor added for transaction scope support.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
