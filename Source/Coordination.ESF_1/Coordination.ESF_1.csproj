@@ -4,6 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/falamarzijahromi/ESF_1</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/falamarzijahromi/ESF_1</RepositoryUrl>
+    <PackageTags>ESF_1</PackageTags>
+    <PackageReleaseNotes>ESF_1 coordination  framework</PackageReleaseNotes>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/falamarzijahromi/ESF_1/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
 </Project>
