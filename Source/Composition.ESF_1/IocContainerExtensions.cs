@@ -7,15 +7,15 @@ namespace Composition.ESF_1
     public static class IocContainerExtensions
     {
         public static void RegisterAllServicesPerGraph(
-            this IIocContainer container, 
-            Assembly assembly, 
+            this IIocContainer container,
+            Assembly assembly,
             Type[] interceptorTypes = null)
         {
             var implementationTypes = assembly.ExportedTypes.Where(type => type.IsClass);
 
             foreach (var implementationType in implementationTypes)
             {
-                container.RegisterPerGraph(new [] {implementationType}, implementationType, interceptorTypes);
+                container.RegisterPerGraph(new[] { implementationType }, implementationType, interceptorTypes);
 
                 var serviceTypes = implementationType.GetInterfaces();
 
@@ -23,6 +23,21 @@ namespace Composition.ESF_1
                 {
                     container.RegisterPerGraph(serviceTypes, implementationType, interceptorTypes);
                 }
+            }
+        }
+
+        public static void RegisterAllServicesFactoryTransient<T>(
+            this IIocContainer container,
+            Func<Type, object> genericFactoryDelegate,
+            Type[] serviceTypes,
+            Type[] interceptorTypes = null)
+        {
+            foreach (var serviceType in serviceTypes)
+            {
+                container.RegisterFactoryTransient(
+                    new[] { serviceType }, 
+                    () => genericFactoryDelegate(serviceType), 
+                    interceptorTypes);
             }
         }
     }

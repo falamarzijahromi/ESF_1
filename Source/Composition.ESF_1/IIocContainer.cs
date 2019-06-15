@@ -6,6 +6,6 @@ namespace Composition.ESF_1
     {
         void RegisterPerGraph(Type[] serviceTypes, Type implementationType, Type[] interceptorTypes = null);
 
-        void RegisterFactory(Type[] serviceTypes, Func<object> serviceFactory, Type[] interceptors = null);
+        void RegisterFactoryTransient(Type[] serviceTypes, Func<object> serviceFactory, Type[] interceptors = null);
     }
 }

@@ -16,7 +16,7 @@ Bug Fixed:</PackageReleaseNotes>
     <PackageLicenseUrl>https://raw.githubusercontent.com/falamarzijahromi/ESF_1/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/falamarzijahromi/ESF_1</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
 </Project>
