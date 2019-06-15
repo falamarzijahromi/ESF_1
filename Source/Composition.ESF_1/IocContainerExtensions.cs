@@ -26,7 +26,7 @@ namespace Composition.ESF_1
             }
         }
 
-        public static void RegisterAllServicesFactoryTransient<T>(
+        public static void RegisterAllServicesFactoryTransient(
             this IIocContainer container,
             Func<Type, object> genericFactoryDelegate,
             Type[] serviceTypes,

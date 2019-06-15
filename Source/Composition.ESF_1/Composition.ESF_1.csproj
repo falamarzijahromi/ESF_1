@@ -8,15 +8,17 @@
     <Product />
     <Description>Composition framework for ESF_1</Description>
     <PackageTags>ESF_1</PackageTags>
-    <PackageReleaseNotes>FeatureAdded:
-    *Factory delegate for service types.
+    <PackageReleaseNotes>Feature Added:
+
+Bug Fixed:
+*Extensions.
 
 Bug Fixed:</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/falamarzijahromi/ESF_1</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/falamarzijahromi/ESF_1/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/falamarzijahromi/ESF_1</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
   </PropertyGroup>
 
 </Project>
