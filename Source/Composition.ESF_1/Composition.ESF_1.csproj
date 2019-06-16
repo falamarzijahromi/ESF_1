@@ -9,15 +9,15 @@
     <Description>Composition framework for ESF_1</Description>
     <PackageTags>ESF_1</PackageTags>
     <PackageReleaseNotes>Feature Added:
+*Factory per graph registration.
 
-Bug Fixed:
-*IResolver bug fixed.</PackageReleaseNotes>
+Bug Fixed:</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/falamarzijahromi/ESF_1</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/falamarzijahromi/ESF_1/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/falamarzijahromi/ESF_1</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.3.1</Version>
-    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <Version>1.3.2</Version>
+    <AssemblyVersion>1.3.2.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
