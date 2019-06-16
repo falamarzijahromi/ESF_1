@@ -28,7 +28,7 @@ namespace Composition.ESF_1
 
         public static void RegisterAllServicesFactoryTransient(
             this IIocContainer container,
-            Func<Type, object> genericFactoryDelegate,
+            Func<IResolver, Type, object> genericFactoryDelegate,
             Type[] serviceTypes,
             Type[] interceptorTypes = null)
         {
@@ -36,7 +36,7 @@ namespace Composition.ESF_1
             {
                 container.RegisterFactoryTransient(
                     new[] { serviceType }, 
-                    r => genericFactoryDelegate(serviceType), 
+                    r => genericFactoryDelegate(r, serviceType), 
                     interceptorTypes);
             }
         }
