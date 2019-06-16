@@ -36,7 +36,7 @@ namespace Composition.ESF_1
             {
                 container.RegisterFactoryTransient(
                     new[] { serviceType }, 
-                    () => genericFactoryDelegate(serviceType), 
+                    r => genericFactoryDelegate(serviceType), 
                     interceptorTypes);
             }
         }
