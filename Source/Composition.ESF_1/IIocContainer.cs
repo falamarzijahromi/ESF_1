@@ -9,5 +9,7 @@ namespace Composition.ESF_1
         void RegisterFactoryTransient(Type[] serviceTypes, Func<IResolver, object> serviceFactory, Type[] interceptors = null);
 
         void RegisterFactoryPerGraph(Type[] serviceTypes, Func<IResolver, object> serviceFactory, Type[] interceptors = null);
+
+        void RegisterSingleton(Type implementationType, object instance);
     }
 }
